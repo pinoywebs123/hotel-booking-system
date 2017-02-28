@@ -1,0 +1,104 @@
+.datetimepicker {
+background:#fff;
+border-top-right-radius:5px;
+border-top-left-radius:5px;
+border-bottom-right-radius:5px;
+border-bottom-left-radius:5px;
+overflow:hidden;
+-webkit-box-shadow:0 6px 12px rgba(0,0,0,.176);
+box-shadow:0 6px 12px rgba(0,0,0,.176);
+max-width:300px;
+display:inline-block;
+padding:10px;
+}
+
+.datetimepicker+.datetimepicker {
+margin-left:15px;
+}
+
+.datetimepicker .paging {
+text-align:center;
+font-size:12px;
+position:relative;
+padding:5px;
+}
+
+.datetimepicker .paging .month-name {
+text-transform:uppercase;
+font-weight:700;
+}
+
+.datetimepicker .paging i {
+width:0;
+height:0;
+display:inline-block;
+vertical-align:middle;
+position:absolute;
+top:9px;
+line-height:24px;
+cursor:pointer;
+border-color:gray;
+border-style:solid;
+border-width:5px;
+}
+
+.datetimepicker .paging i.prev {
+left:0;
+border-top-color:transparent;
+border-bottom-color:transparent;
+border-left-style:none;
+}
+
+.datetimepicker .paging i.next {
+right:0;
+border-top-color:transparent;
+border-bottom-color:transparent;
+border-right-style:none;
+}
+
+.datetimepicker table {
+font-weight:400;
+font-size:14px;
+color:#333;
+border-collapse:collapse;
+width:100%;
+}
+
+.datetimepicker table td {
+text-align:center;
+border:1px solid #eee;
+padding:3px;
+}
+
+.datetimepicker table td.near-month {
+color:#ccc;
+}
+
+.datetimepicker table td.cur-date.cur-month {
+background:#D9EDF7;
+}
+
+.datetimepicker table td.unavailable {
+background:#C55762;
+color:#fff;
+}
+
+.datetimepicker table thead {
+font-weight:700;
+}
+
+.datetimepicker table thead td {
+border:none;
+border-bottom:2px solid #eee;
+min-width:40px;
+}
+
+.datetimepicker table tbody td:hover {
+background:#eee;
+cursor:pointer;
+}
+
+.datetimepicker table tbody td:hover.unavailable {
+background:#C55762;
+cursor:not-allowed;
+}
